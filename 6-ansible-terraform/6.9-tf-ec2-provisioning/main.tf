@@ -9,7 +9,7 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
-provider "aws" {
+provider "aws1" {
   region  = "us-east-1"
   profile = "swati.chouhan"
 }
