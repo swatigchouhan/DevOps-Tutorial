@@ -9,16 +9,16 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
-provider "aws1" {
+provider "aws" {
   region  = "us-east-1"
   profile = "swati.chouhan"
 }
 
 resource "aws_instance" "server" {
-  ami           = "ami-00d990e7e5ece7974"
+  ami           = "ami-0277155c3f0ab2930"
   instance_type = "t2.micro"
 
   tags = {
-    Name = "TerraformServer"
+    Name = "Terraform-EC2-Instance"
   }
 }
